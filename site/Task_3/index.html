@@ -3,54 +3,55 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 
 </head>
 <style>
+    * {
+    	margin: 0;
+    	padding: 0;
+    }
     html, body {
     	height: 100%;
+    	font-size: 62.5%; 
+    	background-color: #68CDD5;
     }
 	.container {
-		width: 100%;
-		height: 100%;
+		width: 100vw;
 		max-width: 768px;
 		min-width: 160px;
 		margin: 0 auto;
-		background-color: #68CDD5;
 	}
 
 	#controlBar {
 		display: block;
-		width: 100%;
-		height: 10%;
-		border: 1px dotted red;
+		width: 100vw;
 	}
 	#arrow {
-		float: left;
-		margin:5%;
-		border: 1px dotted green;
+		display: block;
+		margin:3vw;
+		margin-left: 6vw;
+		height: 10vw;
 	}
 
     #introduction {
     	display: block;
-    	width:73%;
+    	width:74%;
     	margin:2% auto;
     	text-align: center;
-    	border: 1px dotted white;
     	padding-top: 10%;
     	padding-bottom: 20%;
     }
-    #introduciton img {
-    	margin: 0;
-    	padding: 0;
-    	display: block;
-    	border: 1px dotted white;
+
+    #main-logo {
+    	position: relative;
+    	left: -2vw;
+    	height: 15vw;
     }
     #introduction p {
     	color: white;
-    	font-size: 2.1rem;
-    	letter-spacing: 0.1em;
-    	font-weight: lighter;
+    	font-size: 4.5vw;      
+    	letter-spacing: 0.1rem;
     	text-align: left;
     	line-height: 170%;
     	margin-top: 20%;
@@ -60,16 +61,33 @@
     	display: block;
     	position: relative;
     	top:30%;
-    	width: 70%;
-    	margin:5% auto;
-    	border: 1px dotted black;
+    	width: 60%;
+    	margin: 5% auto;
+    	padding-bottom: 50%;
     }
-    #leftLogo {
+    #leftItem {
+    	display: inline-block;
+    	width: 20vw;
     	float: left;
+    	text-align: center;
     }
-    #rightLogo {
+    #rightItem {
+    	display: inline-block;
+    	width: 20vw;
     	float: right;
+    	text-align: center;
     }
+
+    .item-text {
+    	text-align: center;
+    	color: white;
+    	font-size: 3vw;
+    	margin-top: 10%;
+    }
+    .item-logo {
+    	height: 13vw;
+    }
+
 
 
 
@@ -79,20 +97,22 @@
 
 	<div class="container">
 		<div id="controlBar">
-				<img id="arrow" src="./img/arrow.png" alt="返回记录页">
+				<a href="http://101.200.156.200/" id="arrow">
+					<img src="./img/arrow.png" alt="">
+				</a> 
 		</div>
 		<div id="introduction">
-			<img src="./img/logo_center.png" alt="葡萄藤">
-			<p>葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以下线下聚会桌游道具。</p>
+			<img id="main-logo" src="./img/logo_center.png" alt="葡萄藤">
+			<p>葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以及线下聚会桌游道具。</p>
 		</div>
 		<div id="footer">
-			<div id="leftLogo">
-				<img src="./img/logo_left.png" alt="组织">
-				<p>290560933</p>
+			<div id="leftItem">
+				<img class="item-logo" src="./img/logo_left.png" alt="组织">
+				<p class="item-text">290560933</p>
 			</div>
-			<div id="rightLogo">
-				<img src="./img/logo_right.png" alt="logo">
-				<p>BJPTTeng</p>
+			<div id="rightItem">
+				<img class="item-logo" src="./img/logo_right.png" alt="logo">
+				<p class="item-text">BJPTTeng</p>
 			</div>
 		</div>
 	</div>
