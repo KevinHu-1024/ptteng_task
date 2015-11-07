@@ -80,10 +80,31 @@
         top:22vw;
     }
     #champion-cup {
-        height: 18vw;
+        height: 20vw; /*这里改变奖杯大小*/
+        animation: firstAnimation 0.5s;
+        -moz-animation: firstAnimation 0.5s; /* Firefox */
+        -webkit-animation: firstAnimation 0.5s;  /* Safari 和 Chrome */
+        -o-animation: firstAnimation 0.5s;   /* Opera */
         margin: 0 auto;
         z-index: 2;
     }
+    @keyframes firstAnimation {
+        from {height: 10vw;}
+        to {height: 25vw;}
+    }
+    @-moz-keyframes firstAnimation {
+        from {height: 10vw;}
+        to {height: 25vw;}
+    }
+    @-webkit-keyframes firstAnimation {
+        from {height: 10vw;}
+        to {height: 25vw;}
+    }
+    @-o-keyframes firstAnimation {
+        from {height: 10vw;}
+        to {height: 25vw;}
+    }
+
     #info-item {
         position: absolute;
         width: 80vw;
@@ -96,6 +117,26 @@
         width:40vw;
         color: white;
         text-align: center;
+        animation: secondAnimation 0.5s;
+        -moz-animation: secondAnimation 0.5s; /* Firefox */
+        -webkit-animation: secondAnimation 0.5s;  /* Safari 和 Chrome */
+        -o-animation: secondAnimation 0.5s;   /* Opera */
+    }
+    @keyframes secondAnimation {
+        from {font-size: 5vw;}
+        to {font-size: 10vw;}
+    }
+    @-moz-keyframes secondAnimation {
+        from {font-size: 5vw;}
+        to {font-size: 10vw;}
+    }
+    @-webkit-keyframes secondAnimation {
+        from {font-size: 5vw;}
+        to {font-size: 10vw;}
+    }
+    @-o-keyframes secondAnimation {
+        from {font-size: 5vw;}
+        to {font-size: 10vw;}
     }
     #congratulations {
         color: #FFC865;
