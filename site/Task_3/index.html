@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 </head>
 <style>
@@ -13,12 +13,10 @@
     }
     html, body {
     	height: 100%;
-    	font-size: 62.5%; 
     	background-color: #68CDD5;
     }
 	.container {
 		width: 100vw;
-		max-width: 768px;
 		min-width: 160px;
 		margin: 0 auto;
 	}
@@ -28,11 +26,13 @@
 		width: 100vw;
 	}
 	#arrow {
-		display: block;
+		display: inline-block;
 		margin:3vw;
 		margin-left: 6vw;
-		height: 10vw;
 	}
+    #arrow img {
+        height: 10vw;
+    }
 
     #introduction {
     	display: block;
@@ -51,7 +51,7 @@
     #introduction p {
     	color: white;
     	font-size: 4.5vw;      
-    	letter-spacing: 0.1rem;
+    	letter-spacing: 0.1vw;
     	text-align: left;
     	line-height: 170%;
     	margin-top: 20%;
