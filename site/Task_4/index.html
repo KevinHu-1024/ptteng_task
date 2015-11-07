@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+</head>
+<style>
+    * {
+    	margin: 0;
+    	padding: 0;
+    }
+    html, body {
+    	height: 100%;
+    	background-color: #29BDE0;
+    }
+	.container {
+		width: 100vw;
+		min-width: 160px;
+		margin: 0 auto;
+	}
+/* nav区域  */
+	#navBar {
+		display: block;
+		width: 100vw;
+        border-bottom: 1px solid #74D4EB;
+	}
+    #navBar * {
+        display: inline-block;
+        color: white;
+        text-align: center;
+    }
+    #navBar a {
+        margin: 4vw;
+    }
+    #navBar a img {
+        height: 8vw;
+    }
+    #info {
+        float: right;
+    }
+    #navBar p {
+        display: inline-block;
+        width: 60vw;
+        margin: 0 auto;
+        font-size: 6vw;
+    }
+/* game-results区域 */
+
+    #game-results {
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 4vw;
+    }
+
+    /*  champion-sence区域  */
+    #champion-sence {
+
+    }
+    #champion-sence  p {
+        text-align: left;
+    }
+    #champion-logo {
+        width: 100%;
+        display: inline-block;
+        text-align: center;       
+    }
+    #champion-frame {
+        display: inline-block;
+        height: 35vw;
+        margin: 0 auto;
+    }
+    #cup-item {
+        position: absolute;
+        width: 80vw;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        top:22vw;
+    }
+    #champion-cup {
+        height: 18vw;
+        margin: 0 auto;
+        z-index: 2;
+    }
+    #info-item {
+        position: absolute;
+        width: 80vw;
+        top:45vw;
+        text-align: center;      
+    }
+    #info-item p {
+        display: inline-block;
+        font-size: 8vw;
+        width:40vw;
+        color: white;
+        text-align: center;
+    }
+    #congratulations {
+        color: #FFC865;
+        font-size: 5.5vw;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+        line-height: 7vw;
+    }
+    /*  game-sub区域  */
+    #game-sub {
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+        font-size: 4vw;
+        color: white;
+        line-height: 6vw;
+    }
+    #chapter-sub p {
+        display: inline-block;
+        padding-right: 6vw;
+    }
+/* game-detail区域 */
+    #game-detail {
+        background-color: white;
+        padding-bottom: 18vw;
+    }
+    .day-item {
+        width: 80vw;
+        margin:0 auto;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+        color: #A6A6A6;
+    }
+    .day {
+        display: inline-block;
+        color: black;
+        font-size: 5vw;
+    }
+    .process {
+        display: inline-block;
+        padding-top: 2vw;
+        font-size: 4vw;
+    }
+    .process p {
+        margin-top: 1vw;
+    }
+    .time {
+        float: right;
+        font-size: 3.5vw;
+    }
+/* footer区域 */
+    #footer {
+        position: fixed;
+        width: 100vw;
+        bottom: 0;
+    }
+
+    #leftButton {
+        float: left;
+        background-color: #F66F6F;
+        border-radius: 2vw;
+        color: white;
+        font-size: 7vw;
+        padding: 2vw 4vw;
+        margin: 2vw 4vw;
+        opacity: 1;
+        z-index: 4;
+    }
+    #rightButton {
+        float: right;
+        background-color: #FBB435;
+        border-radius: 10px;
+        color: white;
+        font-size: 7vw;
+        padding: 2vw 4vw;
+        margin: 2vw 4vw;
+        opacity: 1;
+        z-index: 4;
+    }
+    #box {
+        position: fixed;
+        width: 100vw;
+        bottom: 0;
+        height: 15vw;
+        background-color: #29BDE0;
+        opacity: 0.5
+    }
+
+
+
+</style>
+<body>
+
+	<div class="container">
+		<nav id="navBar">
+                <a href="http://101.200.156.200/" id="home">
+                    <img src="./img/home.png" alt="">
+                </a> 
+                <p>游戏结果</p>
+                <a href="http://101.200.156.200/" id="info">
+					<img src="./img/info.png" alt="">
+				</a> 
+		</nav>
+        <section id="game-results">
+    		<section id="champion-sence">
+                <div id="champion-logo">
+        			<img id="champion-frame" src="./img/champion-frame.png" alt="冠军">
+                    <div id="info-item">
+                        <p>卧底胜利</p>
+                    </div>
+                    <div id="cup-item">
+                        <img id="champion-cup" src="./img/champion-cup.png" alt="奖杯">
+                    </div>
+                </div>
+    			<p id="congratulations">太棒了！你知道么？在捉鬼游戏中只有20%的卧底去的游戏最终的胜利哦！</p>
+    		</section>
+            <section id="game-sub">
+                <p>本次游戏共计用时<span id="hour">0</span>小时<span id="minute">25</span>分钟</p>
+                <div id="chapter-sub">
+                    <p>杀&nbsp; &nbsp; 手&nbsp;<span id="killer-num">0</span>人</p>
+                    <p>警&nbsp; &nbsp; 察&nbsp;<span id="police-num">1</span>人</p>
+                    <p>平&nbsp; &nbsp; 民&nbsp;<span id="citizen-num">6</span>人</p>
+                    <p>狙击手&nbsp;<span id="sniper-num">0</span>人</p>
+                    <p>医&nbsp; &nbsp; 生&nbsp;<span id="doctor-num">1</span>人</p>
+                </div>
+            </section>
+        </section>
+        <section id="game-detail">
+            <div class="day-item">
+                <div class="day">第1天</div>
+                <div class="time">
+                    <p><span id="hour-day1">0</span>小时<span id="minute-day1">07</span>分</p>
+                </div>
+                <div class="process">
+                    <p>晚上：<span class="night-num-day1">5</span>号被<span id="night-death-day1">杀手杀死</span>，<span class="night-num-day1">5</span>号是<span id="night-identifier-day1">水民</span></p>
+                    <p>白天：<span class="daytime-num-day1">8</span>号被<span id="daytime-death-day1">全民投票投死</span>，<span class="daytime-num-day1">8</span>号是<span id="daytime-identifier-day1">杀手</span></p>
+                </div>
+            </div>
+            <div class="day-item">
+                <div class="day">第2天</div>
+                <div class="time">
+                    <p><span id="hour-day2">0</span>小时<span id="minute-day2">07</span>分</p>
+                </div>
+                <div class="process">
+                    <p>晚上：<span class="night-num-day2">5</span>号被<span id="night-death-day2">杀手杀死</span>，<span class="night-num-day2">5</span>号是<span id="night-identifier-day2">水民</span></p>
+                    <p>白天：<span class="daytime-num-day1">8</span>号被<span id="daytime-death-day1">全民投票投死</span>，<span class="daytime-num-day1">8</span>号是<span id="daytime-identifier-day1">杀手</span></p>
+                </div>
+            </div>
+            <div class="day-item">
+                <div class="day">第3天</div>
+                <div class="time">
+                    <p><span id="hour-day3">0</span>小时<span id="minute-day3">07</span>分</p>
+                </div>
+                <div class="process">
+                    <p>晚上：<span class="night-num-day3">5</span>号被<span id="night-death-day3">杀手杀死</span>，<span class="night-num-day3">5</span>号是<span id="night-identifier-day3">水民</span></p>
+                    <p>白天：<span class="daytime-num-day1">8</span>号被<span id="daytime-death-day1">全民投票投死</span>，<span class="daytime-num-day1">8</span>号是<span id="daytime-identifier-day1">杀手</span></p>
+                </div>
+            </div>
+            <div class="day-item">
+                <div class="day">第4天</div>
+                <div class="time">
+                    <p><span id="hour-day4">0</span>小时<span id="minute-day4">07</span>分</p>
+                </div>
+                <div class="process">
+                    <p>晚上：<span class="night-num-day4">5</span>号被<span id="night-death-day4">杀手杀死</span>，<span class="night-num-day4">5</span>号是<span id="night-identifier-day4">水民</span></p>
+                    <p>白天：<span class="daytime-num-day1">8</span>号被<span id="daytime-death-day1">全民投票投死</span>，<span class="daytime-num-day1">8</span>号是<span id="daytime-identifier-day1">杀手</span></p>
+                </div>
+            </div>
+        </section>
+        <div id="box"></div>
+		<section id="footer">
+            
+			<div id="leftButton">
+				<p class="item-text">再来一局</p>
+			</div>
+			<div id="rightButton">
+				<p class="item-text">上传并分享</p>
+			</div>
+            
+		</section>
+        
+	</div>
+</body>
+	<!--<script>
+	alert("climentWidth(layout viewport)= "+document.documentElement.clientWidth+"px"+"\n"+"innerWidth(visual viewport)= "+window.innerWidth+"px");
+	</script>-->
+</html>
