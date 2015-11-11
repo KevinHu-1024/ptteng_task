@@ -1,0 +1,140 @@
+    * {
+    	margin: 0;
+    	padding: 0;
+    }
+    html, body {
+    	height: 100%;
+    	background-color: #F0F0F0;
+    }
+	.main {
+		width: 100vw;
+		min-width: 160px;
+		margin: 0 auto;
+	}
+    #mask {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        opacity: 0.5;
+        background-color: black;
+
+    }
+/* nav区域  */
+	#navBar {
+		display: block;
+		width: 100vw;
+        border-bottom: 1px solid #74D4EB;
+        background-color: #29BDE0;
+	}
+    #navBar * {
+        display: inline-block;
+        color: white;
+        text-align: center;
+    }
+    #navBar a {
+        margin: 4vw;
+    }
+    #navBar a img {
+        height: 5vw;
+    }
+/* game-hisory区域 */
+
+    #game-history {
+        width: 85vw;
+        margin: 0 auto;
+        margin-top: 4vw;
+        border: 0.5vw solid #c9c9c9;
+        text-align: center;
+        background-color: white;
+    }
+
+    /*  last-game区域  */
+    #game-elements  p {
+        width: 80%;
+        display: inline-block;
+        color: #9A9A9A;
+        text-align: center;
+        font-size: 5vw;
+        padding: 6vw 0;
+    }
+    #history-back {
+        float: right;
+        margin: 0;
+        padding: 0;
+        height: 8vw;
+        padding: 5vw 0;
+        padding-right: 2vw;
+    }
+/* game-choose区域 */
+    #game-choose {
+        width: 85vw;
+        margin: 4vw auto;
+        border: 0.5vw solid #c9c9c9;
+        text-align: center;
+        background-color: white;
+    }
+    #title p {
+        width: 85vw;
+        margin:0 auto;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+        font-size: 7vw;
+        color: #FBB435;
+        border-bottom: 0.5vw solid #FBB345;
+    }
+    #game-box {
+    }
+    #game {
+        display: inline-block;
+        width: 100%;
+        margin: 4vw 0;
+        /*margin-right: -9%;*/
+    }
+    .game-items {
+        display: inline-block;
+        width:80%;
+        text-align: center;
+        margin-top: 1vw;
+    }
+    .game-items p {
+        width: 100%;
+        margin: 0 auto;
+        background-color: #69D1E9;
+        color: white;
+        font-size: 6vw;
+        padding: 7vw 0;
+    }
+    .game-items p + p {
+        background-color: white;
+        color: #9A9A9A;
+        font-size: 4vw;
+        padding: 3vw 0;
+    }
+    #next-page {
+        float: right;
+        margin-left: -10vw;
+        margin-top: -25vw;
+    }
+    #next-page img {
+        height: 8vw;
+        padding-right: 2vw;
+    }
+    .page-control {
+        display: block;
+        width: 20%;
+        margin: 2vw auto;
+        margin-top: -5vw;
+    }
+    .page-element {
+        display: inline-block;
+        padding-right: 2vw;
+        padding-bottom: 2vw;
+        border-radius: 2vw;
+        color: #C9C9C9;
+        background-color: #f0f0f0;
+    }
+    #page-current {
+        background-color: #69D1E9;
+    }
