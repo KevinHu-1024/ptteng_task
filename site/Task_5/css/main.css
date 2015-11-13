@@ -14,13 +14,6 @@
 		margin: 0 auto;
         padding-bottom: 6vw;
 	}
-    #main-moveLeft {
-        width: 100vw;
-        min-width: 160px;
-        margin: 0 auto;
-        -webkit-transition: all 0.25s;
-        -webkit-transform: translate(70vw,13.5vw);
-    }
     #menu {
         display: none;
         position: absolute;

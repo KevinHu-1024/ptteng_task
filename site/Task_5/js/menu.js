@@ -9,11 +9,10 @@ function hidebar () {
 }
 function showBar () {
 	document.getElementById('mask').style.transition = "all 1s";
+	document.getElementById('mask').style.display = "block";
 	document.getElementById('menu').style.display = "block";
     document.getElementById('main').style.transition = "all 0.3s";
     document.getElementById('main').style.transform = "translate(70vw,13.5vw)";
-    document.getElementById('mask').style.display = "block";
-
 }
 
 function handle () {
