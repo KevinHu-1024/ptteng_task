@@ -9,13 +9,25 @@
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./css/menu.css">
 <body>
-
-	<div class="main">
-        <div id="mask"></div>
+    <div id="menu">
+        <ul>
+            <li>
+                <img class="menu-element-front" src="./img/bocast.png" alt=""><p>公告</p><img class="menu-element-last" src="./img/enter.png" alt="">
+            </li>
+            <li>
+                <img class="menu-element-front" src="./img/setting.png" alt=""><p>设置</p><img class="menu-element-last" src="./img/enter.png" alt="">
+            </li>
+            <li>
+                <img class="menu-element-front" src="./img/QnA.png" alt=""><p>帮助</p><img class="menu-element-last" src="./img/enter.png" alt="">
+            </li>
+            <li>
+                <img class="menu-element-front" src="./img/info.png" alt=""><p>关于</p><img class="menu-element-last" src="./img/enter.png" alt="">
+            </li>
+        </ul>
+    </div>
+	<div id="main">       
 		<nav id="navBar">
-                <a href="http://101.200.156.200/" id="home">
-                    <img src="./img/menu.png" alt="">
-                </a> 
+            <input id="menuButton" type="image" src="./img/menu.png" alt="Submit" >
 		</nav>
         <section id="game-history">
             <div id="game-elements">
@@ -23,6 +35,8 @@
                 <img id="history-back" src="./img/history-back.png" alt="">
             </div>
         </section>
+        <div>
+        <div id="mask"></div>
         <section id="game-choose">
             <div id="title">
                 <p>捉鬼游戏</p>
@@ -52,7 +66,8 @@
                 <div class="page-element" id="page-3"></div>
                 <div class="page-element" id="page-4"></div>
             </div>
-        </section>        
+        </section>
+        </div>        
 	</div>
 </body>
 <script type="text/javascript" src="./js/menu.js"></script>

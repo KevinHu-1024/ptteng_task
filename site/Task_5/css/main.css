@@ -4,22 +4,64 @@
     }
     html, body {
     	height: 100%;
-    	background-color: #F0F0F0;
+    	background-color: #29BDE0;
+        z-index: -1;
+        width: 100vw;
+        overflow: hidden;
     }
-	.main {
+	#main {
 		width: 100vw;
 		min-width: 160px;
 		margin: 0 auto;
+        padding-bottom: 6vw;
 	}
+    #main-moveLeft {
+        width: 100vw;
+        min-width: 160px;
+        margin: 0 auto;
+        -webkit-transition: all 0.25s;
+        -webkit-transform: translate(70vw,13.5vw);
+    }
+    #menu {
+        display: none;
+        position: absolute;
+        z-index: 0;
+        top: 13.5vw;
+        background-color: white;
+        padding-bottom: 109vw;
+        width: 70vw;
+    }
     #mask {
         display: none;
         position: absolute;
-        top: 0;
+        top: 13.5vw;
         width: 100vw;
         height: 100%;
         opacity: 0.5;
         background-color: black;
 
+    }
+/* menu区域 */
+    #menu li {
+        height: 14vw;
+        list-style-type: none;
+        border-bottom: 1px solid #F0F0F0;
+    }
+    #menu p {
+        display: inline-block;
+        font-size: 6vw;
+        color: #29BDE0;
+        margin-top: 4vw;
+    }
+    .menu-element-front {
+        float: left;
+        height: 8vw;
+        margin: 3vw;
+    }
+    .menu-element-last {
+        float: right;
+        height: 8vw;
+        margin: 3vw;
     }
 /* nav区域  */
 	#navBar {
@@ -34,9 +76,10 @@
         text-align: center;
     }
     #navBar a {
-        margin: 4vw;
+        
     }
-    #navBar a img {
+    #navBar input {
+        margin: 4vw;
         height: 5vw;
     }
 /* game-hisory区域 */
