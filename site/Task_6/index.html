@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 6</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+</head>
+<style>
+    * {
+    	margin: 0;
+    	padding: 0;
+    }
+    html, body {
+    	height: 100%;
+        width: 100vw;
+    	background-color: #29BDE0;
+    }
+	.container {
+		width: 100vw;
+		min-width: 160px;
+		margin: 0 auto;
+	}
+/* nav区域  */
+	#navBar {
+		display: block;
+		width: 100vw;
+        height: 15vw;
+        border-bottom: 1px solid #74D4EB;
+        color: white;
+	}
+    #navBar p {
+        display: inline-block;
+        width: 68vw;
+        margin: 5vw auto;
+        font-size: 7vw;
+        text-align: center;
+    }
+    #navBar a {
+        margin: 3.5vw;
+    }
+    #navBar a img {
+        height: 8vw;
+    }
+    #menu {
+        float: left;
+    }
+    #close {
+        float: right;
+    }
+
+/* tapsArea区域 */
+    #tapsArea {
+        width: 100vw;
+        border: 1px dotted white;
+    }
+    #taps-detail {
+        display: block;
+        color: black;
+        height: 15vw;
+    }
+    #taps-detail p {
+        position: absolute;
+        margin: 4vw 0 4vw 6vw;
+        font-size: 4.5vw;
+        z-index: 2;
+    }
+    #background  {
+        position: absolute;
+        width: 100vw;
+        z-index: 1;
+    }
+    #play {
+        position: absolute;
+        right: 0;
+        width: 9vw;
+        z-index: 3;
+        margin: 1.5vw;
+    }
+    #taps {
+        display: block;
+        color: white;
+    }
+    #taps p {
+        font-size: 4vw;
+        margin-left: 10vw;
+        margin-top: 2vw;
+        margin-bottom: 4vw;
+    }
+/* chooseArea区域 */
+
+/* footer区域 */
+    #footer {
+        position: fixed;
+        width: 100vw;
+        bottom: 0;
+        text-align: center;
+    }
+
+    #middleButton {
+        display: inline-block;
+        background-color: #FBB435;
+        color: white;
+        font-size: 7vw;
+        padding: 2vw 30vw;
+        margin: 4vw auto;
+        opacity: 1;
+        z-index: 4;
+    }
+    #box {
+        position: fixed;
+        width: 100vw;
+        bottom: 0;
+        height: 19vw;
+        background-color: #29BDE0;
+        opacity: 0.5;
+        border: 1px dotted red;
+    }
+</style>
+<body>
+
+	<div class="container">
+		<nav id="navBar">                
+            <p>投票</p>
+            <a href="http://101.200.156.200/" id="menu">
+                <img src="./img/icon-menu.png" alt="">
+            </a> 
+            <a href="http://101.200.156.200/" id="close">
+    			<img src="./img/icon-close.png" alt="">
+    		</a>
+		</nav>
+        <section id="tapsArea">
+            <div id="taps-detail">
+                <p>发言讨论结束，大家请投票</p>
+                <img id="play" src="./img/icon-play.png" alt="">
+                <img id="background" src="./img/taps-detail-background.png" alt="">
+            </div>
+            <div id="taps">
+            
+                <p>点击得票数最多人的头像</p>
+            </div>
+        </section>
+        <section id="chooseArea">
+            <div class="player-elements">
+                <div class="player-elements-photo">
+                </div>
+                <div class="player-elements-function">
+                </div>
+            </div>
+        </section>
+        <div id="box"></div>
+		<section id="footer">
+			<div id="middleButton">
+				<p class="item-text">投死</p>
+			</div>           
+		</section>
+        
+	</div>
+</body>
+	<!--<script>
+	alert("climentWidth(layout viewport)= "+document.documentElement.clientWidth+"px"+"\n"+"innerWidth(visual viewport)= "+window.innerWidth+"px");
+	</script>-->
+</html>
