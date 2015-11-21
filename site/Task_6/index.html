@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Task 6</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <style>
     * {
@@ -14,6 +14,7 @@
     html, body {
     	height: 100%;
         width: 100vw;
+        max-width: 1024px;
     	background-color: #29BDE0;
     }
 	.container {
@@ -21,89 +22,28 @@
 		min-width: 160px;
 		margin: 0 auto;
 	}
-/* nav区域  */
-	#navBar {
-		display: block;
-		width: 100vw;
-        height: 15vw;
-        border-bottom: 1px solid #74D4EB;
-        color: white;
-	}
-    #navBar p {
-        display: inline-block;
-        width: 68vw;
-        margin: 5vw auto;
-        font-size: 7vw;
-        text-align: center;
-    }
-    #navBar a {
-        margin: 3.5vw;
-    }
-    #navBar a img {
-        height: 8vw;
-    }
-    #menu {
-        float: left;
-    }
-    #close {
-        float: right;
-    }
-
-/* tapsArea区域 */
-    #tapsArea {
-        width: 100vw;
-        border: 1px dotted white;
-    }
-    #taps-detail {
-        display: block;
-        color: black;
-        height: 15vw;
-    }
-    #taps-detail p {
-        position: absolute;
-        margin: 4vw 0 4vw 6vw;
-        font-size: 4.5vw;
-        z-index: 2;
-    }
-    #background  {
-        position: absolute;
-        width: 100vw;
-        z-index: 1;
-    }
-    #play {
-        position: absolute;
-        right: 0;
-        width: 9vw;
-        z-index: 3;
-        margin: 1.5vw;
-    }
-    #taps {
-        display: block;
-        color: white;
-    }
-    #taps p {
-        font-size: 4vw;
-        margin-left: 10vw;
-        margin-top: 2vw;
-        margin-bottom: 4vw;
-    }
 /* chooseArea区域 */
     #chooseArea {
         width: 100vw;
+        padding-bottom: 210vw;
     }
-    .player-elements-photo {
+    .player-elements {
         float: left;
+        width: 25vw;
+        margin: 4vw 4vw 4vw 4vw;
+    }
+
+    .player-elements-photo {
+        display: block;
         background-color: #F5C97B;
-        width: 22vw;
+        width: 23vw;
         padding-bottom: 18vw;
         border: 1vw solid white;
-        margin: 4vw 4vw 8vw 5vw;
     }
     .job {
         position: absolute;
-        width: 22vw;
+        width: 23vw;
         text-align: center;
-        border: 1px dotted green;
         margin-top: 6vw;
         font-size: 5.5vw;
     }
@@ -113,57 +53,82 @@
         background-color: #83B09A;
         font-size: 5vw;
         color: white;
-        width: 22vw;
+        width: 23vw;
         text-align: center;
     }
-/* footer区域 */
-    #footer {
-        position: fixed;
-        width: 100vw;
-        bottom: 0;
-        text-align: center;
+    .player-elements-function {
+        height: 7vw;
+        opacity: 0;
+        text-align: left;
+    }
+    .func1 {
+        background: url(./img/sprite.png) no-repeat 0 0;
+        margin-right: 1.5vw;
+    }
+    .func2 {
+        background: url(./img/sprite.png) no-repeat 35% 0;
+        margin-right: 1.5vw;
+    }
+    .func3 {
+        background: url(./img/sprite.png) no-repeat 65% 0;
+        margin-right: 1.5vw;
+    }
+    .func4 {
+        background: url(./img/sprite.png) no-repeat 100% 0;
+    }
+    .function {
+        display: inline-block;
+        -webkit-background-size: auto 5vw;
+        background-size: auto 5vw;
+        height: 100%;
+        width: 20%;
+        margin-top: 2vw;
+    }
+    .player-elements div:hover ~ .player-elements-function {
+        opacity: 1;
+        animation: funcAnimation 0.3s ease-in-out;
+        -moz-animation: funcAnimation 0.3s ease-in-out; /* Firefox */
+        -webkit-animation: funcAnimation 0.3s ease-in-out;  /* Safari 和 Chrome */
+        -o-animation: funcAnimation 0.3s ease-in-out;   /* Opera */
     }
 
-    #middleButton {
-        display: inline-block;
-        background-color: #FBB435;
-        color: white;
-        font-size: 7vw;
-        padding: 2vw 30vw;
-        margin: 4vw auto;
-        opacity: 1;
-        z-index: 4;
+    @keyframes funcAnimation {
+        from {transform: translate(0,-2vw);opacity: 0;}
+        to {transform: translate(0,0);opacity: 1;}
     }
-    #box {
-        position: fixed;
-        width: 100vw;
-        bottom: 0;
-        height: 19vw;
-        background-color: #29BDE0;
-        opacity: 1;
-        border-top: 0.3vw solid white;
+    @-moz-keyframes funcAnimation {
+        from {transform: translate(0,-2vw);opacity: 0;}
+        to {transform: translate(0,0);opacity: 1;}
+    }
+    @-webkit-keyframes funcAnimation {
+        from {transform: translate(0,-2vw);opacity: 0;}
+        to {transform: translate(0,0);opacity: 1;}
+    }
+    @-o-keyframes funcAnimation {
+        from {transform: translate(0,-2vw);opacity: 0;}
+        to {transform: translate(0,0);opacity: 1;}
     }
 </style>
-<body>
+<body touchstart="" touchend="">
 
 	<div class="container">
 		<nav id="navBar">                
             <p>投票</p>
-            <a href="http://101.200.156.200/" id="menu">
+            <a href="#" id="menu">
                 <img src="./img/icon-menu.png" alt="">
             </a> 
-            <a href="http://101.200.156.200/" id="close">
+            <a href="#" id="close">
     			<img src="./img/icon-close.png" alt="">
     		</a>
 		</nav>
         <section id="tapsArea">
             <div id="taps-detail">
                 <p>发言讨论结束，大家请投票</p>
-                <img id="play" src="./img/icon-play.png" alt="">
+                <input id="play" type="image" src="./img/icon-play.png" alt="">
+                <audio id="music" src="./src/财富自由.mp3" preload="auto">您的浏览器不支持 audio 标签，请升级到最新浏览器</audio>
                 <img id="background" src="./img/taps-detail-background.png" alt="">
             </div>
             <div id="taps">
-
                 <p>点击得票数最多人的头像</p>
             </div>
         </section>
@@ -174,119 +139,109 @@
                     <p class="number">1号</p>
                 </div>
                 <div class="player-elements-function">
+                    <span class="function func1"></span><span class="function func2"></span><span class="function func3"></span><span class="function func4"></span>
                 </div>
             </div> 
             <div class="player-elements">
                 <div class="player-elements-photo">
                     <p class="job">水民</p>
-                    <p class="number">1号</p>
+                    <p class="number">2号</p>
                 </div>
                 <div class="player-elements-function">
+                    <span class="function func1"></span><span class="function func2"></span><span class="function func3"></span><span class="function func4"></span>
+                </div>
+            </div> 
+            <div class="player-elements">
+                <div class="player-elements-photo">
+                    <p class="job">警察</p>
+                    <p class="number">3号</p>
+                </div>
+                <div class="player-elements-function">
+                    <span class="function func1"></span><span class="function func2"></span><span class="function func3"></span><span class="function func4"></span>
+                </div>
+            </div> 
+            <div class="player-elements">
+                <div class="player-elements-photo">
+                    <p class="job">法官</p>
+                    <p class="number">4号</p>
+                </div>
+                <div class="player-elements-function">
+                    <span class="function func1"></span><span class="function func2"></span><span class="function func3"></span><span class="function func4"></span>
+                </div>
+            </div> 
+            <div class="player-elements">
+                <div class="player-elements-photo">
+                    <p class="job">狙击手</p>
+                    <p class="number">5号</p>
+                </div>
+                <div class="player-elements-function">
+                    <span class="function func1"></span><span class="function func2"></span><span class="function func3"></span><span class="function func4"></span>   
+                </div>
+            </div> 
+            <div class="player-elements">
+                <div class="player-elements-photo">
+                    <p class="job">医生</p>
+                    <p class="number">6号</p>
+                </div>
+                <div class="player-elements-function">
+                    <span class="function func1"></span><span class="function func2"></span><span class="function func3"></span><span class="function func4"></span>
+                </div>
+            </div> 
+            <div class="player-elements">
+                <div class="player-elements-photo">
+                    <p class="job">杀手</p>
+                    <p class="number">7号</p>
+                </div>
+                <div class="player-elements-function">
+                    <span class="function func1"></span><span class="function func2"></span><span class="function func3"></span><span class="function func4"></span>
                 </div>
             </div> 
             <div class="player-elements">
                 <div class="player-elements-photo">
                     <p class="job">水民</p>
-                    <p class="number">1号</p>
+                    <p class="number">8号</p>
                 </div>
                 <div class="player-elements-function">
+                    <span class="function func1"></span><span class="function func2"></span><span class="function func3"></span><span class="function func4"></span>
                 </div>
             </div> 
             <div class="player-elements">
                 <div class="player-elements-photo">
                     <p class="job">水民</p>
-                    <p class="number">1号</p>
+                    <p class="number">9号</p>
                 </div>
                 <div class="player-elements-function">
+                    <span class="function func1"></span><span class="function func2"></span><span class="function func3"></span><span class="function func4"></span>
                 </div>
             </div> 
             <div class="player-elements">
                 <div class="player-elements-photo">
                     <p class="job">水民</p>
-                    <p class="number">1号</p>
+                    <p class="number">10号</p>
                 </div>
                 <div class="player-elements-function">
+                    <span class="function func1"></span><span class="function func2"></span><span class="function func3"></span><span class="function func4"></span>
                 </div>
             </div> 
             <div class="player-elements">
                 <div class="player-elements-photo">
                     <p class="job">水民</p>
-                    <p class="number">1号</p>
+                    <p class="number">11号</p>
                 </div>
                 <div class="player-elements-function">
+                    <span class="function func1"></span><span class="function func2"></span><span class="function func3"></span><span class="function func4"></span>
                 </div>
             </div> 
             <div class="player-elements">
                 <div class="player-elements-photo">
                     <p class="job">水民</p>
-                    <p class="number">1号</p>
+                    <p class="number">12号</p>
                 </div>
                 <div class="player-elements-function">
+                    <span class="function func1"></span><span class="function func2"></span><span class="function func3"></span><span class="function func4"></span>
                 </div>
             </div> 
-            <div class="player-elements">
-                <div class="player-elements-photo">
-                    <p class="job">水民</p>
-                    <p class="number">1号</p>
-                </div>
-                <div class="player-elements-function">
-                </div>
-            </div> 
-            <div class="player-elements">
-                <div class="player-elements-photo">
-                    <p class="job">水民</p>
-                    <p class="number">1号</p>
-                </div>
-                <div class="player-elements-function">
-                </div>
-            </div> 
-            <div class="player-elements">
-                <div class="player-elements-photo">
-                    <p class="job">水民</p>
-                    <p class="number">1号</p>
-                </div>
-                <div class="player-elements-function">
-                </div>
-            </div> 
-            <div class="player-elements">
-                <div class="player-elements-photo">
-                    <p class="job">水民</p>
-                    <p class="number">1号</p>
-                </div>
-                <div class="player-elements-function">
-                </div>
-            </div> 
-            <div class="player-elements">
-                <div class="player-elements-photo">
-                    <p class="job">水民</p>
-                    <p class="number">1号</p>
-                </div>
-                <div class="player-elements-function">
-                </div>
-            </div> 
-            <div class="player-elements">
-                <div class="player-elements-photo">
-                    <p class="job">水民</p>
-                    <p class="number">1号</p>
-                </div>
-                <div class="player-elements-function">
-                </div>
-            </div> 
-            <div class="player-elements">
-                <div class="player-elements-photo">
-                    <p class="job">水民</p>
-                    <p class="number">1号</p>
-                </div>
-                <div class="player-elements-function">
-                </div>
-            </div> 
-            <div class="player-elements">
-                <div class="player-elements-photo">
-                    <p class="job">水民</p>
-                    <p class="number">1号</p>
-                </div>
-                <div class="player-elements-function">
-                </div>
+
             </div> 
 
         </section>
@@ -299,7 +254,18 @@
         
 	</div>
 </body>
-	<!--<script>
-	alert("climentWidth(layout viewport)= "+document.documentElement.clientWidth+"px"+"\n"+"innerWidth(visual viewport)= "+window.innerWidth+"px");
-	</script>-->
+	<script>
+    document.body.addEventListener('touchstart',function(){},false);
+    document.body.addEventListener('touchsend',function(){},false);
+    document.getElementById('play').onclick = function(evt) {
+        handle();
+    }
+    function handle () {
+        var music = document.getElementById('music');
+        console.log("play!");
+        alert("play!");
+        music.play();
+
+    }
+	</script>
 </html>
