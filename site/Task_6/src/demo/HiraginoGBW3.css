@@ -1,0 +1,10 @@
+@font-face {
+font-family: 'HiraginoGBW3555450';
+src: url('HiraginoGBW3.eot');
+src: url('HiraginoGBW3.eot?#iefix') format('embedded-opentype'),
+     url('HiraginoGBW3.woff') format('woff'),
+     url('HiraginoGBW3.ttf') format('truetype'),
+     url('HiraginoGBW3.svg#HiraginoGBW3') format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }
