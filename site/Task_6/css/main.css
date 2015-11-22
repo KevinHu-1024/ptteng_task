@@ -111,8 +111,8 @@
         to {transform: translate(0,0);opacity: 1;}
     }
     @-webkit-keyframes tapAnimation {
-        from {transform: translate(0,10vw);opacity: 0;}
-        to {transform: translate(0,0);opacity: 1;}
+        from {-webkit-transform: translate(0,10vw);opacity: 0;}
+        to {-webkit-transform: translate(0,0);opacity: 1;}
     }
     @-o-keyframes tapAnimation {
         from {transform: translate(0,10vw);opacity: 0;}
@@ -128,8 +128,8 @@
         to {transform: rotate(360deg);}
     }
     @-webkit-keyframes navAnimation {
-        from {trasform: rotate(0deg);}
-        to {transform: rotate(360deg);}
+        from {-webjkit-trasform: rotate(0deg);}
+        to {-webkit-transform: rotate(360deg);}
     }
     @-o-keyframes navAnimation {
         from {trasform: rotate(0deg);}

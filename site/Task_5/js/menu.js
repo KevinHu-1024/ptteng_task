@@ -5,7 +5,7 @@ document.getElementById('menuButton').onclick = function(evt) {
 function hidebar () {
 	document.getElementById('mask').style.display = "none";
 	document.getElementById('menu').style.display = "none";
-	document.getElementById('main').style.transform = "";
+	document.getElementById('main').style.webkitTransform = "";
 	document.getElementById('main').style.boxShadow = "";
 	document.getElementById('main').style.overflow = "";
 	document.getElementById('main').style.overflowX = "hidden";
@@ -16,7 +16,7 @@ function showBar () {
 	document.getElementById('mask').style.display = "block";
 	document.getElementById('menu').style.display = "block";
     document.getElementById('main').style.transition = "all 0.3s";
-    document.getElementById('main').style.transform = "translate(70vw,13.5vw)";
+    document.getElementById('main').style.webkitTransform = "translate(70vw,13.5vw)";
     document.getElementById('main').style.boxShadow = "0px 0px 10px #888888";
     document.getElementById('main').style.overflow = "hidden";
 }
