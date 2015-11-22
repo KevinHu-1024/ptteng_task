@@ -7,12 +7,12 @@
     	background-color: #29BDE0;
         z-index: -1;
         width: 100vw;
+        overflow-x: hidden;
     }
 	#main {
 		width: 100vw;
 		min-width: 160px;
 		margin: 0 auto;
-        padding-bottom: 6vw;
 	}
     #menu {
         display: none;
@@ -20,7 +20,7 @@
         z-index: 0;
         top: 13.5vw;
         background-color: white;
-        padding-bottom: 109vw;
+        height: 92%;
         width: 70vw;
     }
     #mask {
