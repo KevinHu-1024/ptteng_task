@@ -27,6 +27,7 @@
 		overflow-x: hidden;
 	}
 	</style>
+	<script type="text/javascript" src="./js/ImgSlider_v0.1.js"></script>
 </head>
 <body>
     <div>
@@ -49,7 +50,13 @@
 	    	</nav>	
     	</header>
     	<div class="mainContainer"><!--主要内容-->
-	    	<section id="imgSlider"><!--首页轮播图-->
+	    	<section id="imgSlider-container"><!--首页轮播图-->
+	    	    <ul>
+	    	    	<li class="img"><img src="./img/banner-1.jpg" alt=""></li>
+	    	    	<li class="img"><img src="./img/banner-2.jpg" alt=""></li>
+	    	    	<li class="img"><img src="./img/banner-3.jpg" alt=""></li>
+	    	    	<li class="img"><img src="./img/banner-4.jpg" alt=""></li>
+	    	    </ul>
 	    	</section>
 	    	<section id="ourAdvantages" class="mainContainer-Section"><!--三大优势-->
 	    		<div class="ourAdvantages-item1">
@@ -170,4 +177,17 @@
     	</footer>
     </div>
 </body>
+    <script>
+	    //生成轮播图片数组
+	    var imgs = document.getElementById('imgSlider-container').getElementsByTagName('li');
+
+	    //实例化轮播组件
+	    var imgSlider = creatImgSlider(1920, 600, imgs);
+
+	    //初始化轮播组件
+	    imgSlider.init();
+
+	    //搞一个定时器，每1000ms，触发一次imgSlider.start();用来模拟点击事件
+	    setInterval("imgSlider.start();",2000);
+    </script>
 </html>
