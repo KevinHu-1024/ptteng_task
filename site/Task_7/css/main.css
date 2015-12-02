@@ -103,6 +103,26 @@
 	}
     #imgSlider-container li img {
     }
+    #pageControl-bottom {
+    	position: relative;
+    	width: 88px;
+    	margin: 0 auto;
+    	text-align: center;
+    	bottom: 20px;
+    }
+    .pageControl-items {
+    	display: inline-block;
+    	width: 16px;
+    	height: 16px;
+    	border-radius: 50%;
+    	border: 1px solid white;
+    	margin-left: 2px;
+    	margin-right: 2px;
+    	background-color: white;
+    }
+    .pageControl-items-current {
+    	background-color: #29B078;
+    }
 	/*====三大优势=====*/
 	#ourAdvantages {
 		height: 338px;
