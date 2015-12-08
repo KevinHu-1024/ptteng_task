@@ -123,6 +123,18 @@
     .pageControl-items-current {
     	background-color: #29B078;
     }
+    #direction {
+    	position: relative;
+    	margin: 0 auto;
+    	width: 80%;
+    	top: -350px;
+    }
+    #left {
+    	float: left;
+    }
+    #right {
+    	float: right;
+    }
 	/*====三大优势=====*/
 	#ourAdvantages {
 		height: 338px;

@@ -27,7 +27,7 @@
 		overflow-x: hidden;
 	}
 	</style>
-	<script type="text/javascript" src="./js/ImgSlider_v0.1.js"></script>
+	<script type="text/javascript" src="./js/ImgSlider_v0.2.js"></script>
 </head>
 <body>
     <div>
@@ -58,10 +58,14 @@
 	    	    	<li class="img"><img src="./img/banner-4.jpg" alt=""></li>
 	    	    </ul>
 	    	    <div id="pageControl-bottom">
-	    	    	<div class="pageControl-items" onclick="imgSlider.start('left')"></div><!--
-	    	    	--><div class="pageControl-items" onclick="imgSlider.start('right')"></div><!--
+	    	    	<div class="pageControl-items"></div><!--
+	    	    	--><div class="pageControl-items" ></div><!--
 	    	    	--><div class="pageControl-items"></div><!--
 	    	    	--><div class="pageControl-items"></div>
+	    	    </div>
+	    	    <div id="direction">
+	    	    <img id="left" src="./img/banner-left.png" alt="" onclick="imgSlider.start('left')">
+	    	    <img id="right" src="./img/banner-right.png" alt="" onclick="imgSlider.start('right')">
 	    	    </div>
 	    	</section>
 	    	<section id="ourAdvantages" class="mainContainer-Section"><!--三大优势-->
