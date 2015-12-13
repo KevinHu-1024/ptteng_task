@@ -22,3 +22,21 @@
 .center-align {
 	text-align: center;
 }
+.career-tbcell1 {
+	float: left;
+	width: 50%;
+	border-right: 1px solid #EDF1F2;
+	border-top: 1px solid #EDF1F2;
+}
+.career-tbcell2 {
+	float: left;
+	width: 40%;
+	border-right: 1px solid #EDF1F2;
+}
+.career-tbcell3 {
+	float: left;
+	width: 60%;
+}
+.career-tbcell3 p {
+	width: 100%;
+}
