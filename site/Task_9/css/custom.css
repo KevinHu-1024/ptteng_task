@@ -1,0 +1,24 @@
+.container-fluid {
+	background-color: #FAFAFA;
+}
+.career {
+	background-color: white;
+	box-shadow: #EDEDED 0px 2px 3px;
+}
+.content-row {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.nav-row, 
+.footer-row {
+	background-color: #29b078;
+}
+.header-row {
+	color: #29b078;
+}
+.right-align {
+	text-align: right;
+}
+.center-align {
+	text-align: center;
+}
