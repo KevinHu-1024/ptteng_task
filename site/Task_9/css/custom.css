@@ -12,15 +12,21 @@
 .nav-row, 
 .footer-row {
 	background-color: #29b078;
+	height: 97px;
 }
 .header-row {
 	color: #29b078;
+	height: 50px;
 }
 .right-align {
 	text-align: right;
 }
 .center-align {
 	text-align: center;
+}
+.career-box {
+	margin-top: 47px;
+	height: 498px;
 }
 .career-tbcell1 {
 	float: left;
@@ -39,4 +45,27 @@
 }
 .career-tbcell3 p {
 	width: 100%;
+}
+.fangxiang ul {
+	list-style-type: none;
+	height: 61px;
+	line-height: 61px;
+	border-bottom: 1px solid #EDF1F2;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.fangxiang li {
+	display: inline-block;
+}
+.mianbaoxie {
+	height: 8rem;
+	padding-top: 3.2rem;
+	border-bottom: 1px solid #EAEAEA;
+	font-size: 14px;
+}
+.title {
+	line-height: 60px;
+	height: 60px;
+	border-bottom: 1px solid #D0D6D9;
+	font-size: 16px;
 }
