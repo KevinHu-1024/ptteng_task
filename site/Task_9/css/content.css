@@ -27,10 +27,16 @@
 }
 .career-container {
 	margin-top: 47px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.career {
+	clear: both;
+	margin: 0 auto;
+	width: 400px;
 }
 .career-box {
-	margin-left: 15px;
-	margin-right: 15px;
+	float: left;
 	box-shadow: 1px 2px 3px #D0D6D9;
 	background-color: white;
 }
@@ -71,18 +77,48 @@
 .box-content-style2 {
 	color: #A9A9A9;
 	border-top: 1px solid #EAEAEA;
-	border-bottom: 1px solid #EAEAEA;
-
-	margin-top: -1px;
+	line-height: 41px;
 }
 .box-content-style2 p {
 	display: inline-block;
 	width: 180px;
 	margin-bottom: 0px;
-		border-right: 1px solid #EAEAEA;
+	padding-left: 5px;
+}
+.box-content-style2 p:first-child {
+	border-right: 1px solid #EAEAEA;
 }
 .box-content-style3 {
 	color: #A9A9A9;
+	line-height: 41px;
+}
+.box-content-style3 div {
+	float: left;
+	width: 250px;
+	line-height: 42px;
+	border-top: 1px solid #EAEAEA;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.box-content-style3 p {
+	display: inline-block;
+	padding-left: 5px;
+	margin-bottom: 0;
+}
+.box-content-style3 div p:nth-of-type(2) {
+	float: right;
+}
+.box-content-style3 div:first-child {
+	display: inline-block;
+	width: 148px;
+	line-height: 130px;
+	border-right: 1px solid #EAEAEA;
+	text-align: center;
+	margin-left: -15px;
+	border-top: 0;
+}
+.box-content-style3 div:nth-of-type(1) {
+	border-top: 0;
 }
 
 
